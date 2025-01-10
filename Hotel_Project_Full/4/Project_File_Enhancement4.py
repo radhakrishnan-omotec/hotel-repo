@@ -19,6 +19,7 @@ def additional_notes():
     return notes
 
 if __name__ == "__main__":
+    st.title("Function 4")
     # Collect additional notes from the user
     guest_notes = additional_notes()
     

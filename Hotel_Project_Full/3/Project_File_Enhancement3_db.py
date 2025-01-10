@@ -91,6 +91,7 @@ def create_submit_button(meals, spa, minibar, total):
         collect_billing_info(meals, spa, minibar, total)
         st.success("Guest information has been successfully saved to the database.")
 if __name__ == "__main__":
+    st.title("Function 3")
     # Set up the database
     setup_database()
 

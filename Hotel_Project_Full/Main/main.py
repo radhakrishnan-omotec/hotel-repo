@@ -71,11 +71,12 @@ def insert_data(conn, user_data):
 
 # Main function to run the Streamlit app
 def main():
+    st.title("Main")
     st.title("Webcam Image Capture and Database Storage")
 
     # Button to open the webcam and capture an image
     if st.button("Click Image"):
-        save_path = r"C:\Users\saad2\Downloads\Face_detection"  # Change this to your desired folder path
+        save_path = r"C:\Users\saad2\Documents\GitHub\hotel-repo\Hotel_Project_Full\Main\Face_detection"  # Change this to your desired folder path
         if not os.path.exists(save_path):
             os.makedirs(save_path)  # Create directory if it doesn't exist
         capture_image(save_path)
@@ -113,9 +114,9 @@ def main():
     # Optional functionality to classify or generate bills
     if st.button("Classify"):
         # Define the absolute paths to the Haar cascade XML files
-        face_cascade_path = r'C:\Users\saad2\Desktop\Project_Omotec\MyProject\opencv_3.4_data_haarcascades\haarcascade_frontalface_default.xml'
-        eye_cascade_path = r'C:\Users\saad2\Desktop\Project_Omotec\MyProject\opencv_3.4_data_haarcascades\haarcascade_eye.xml'
-        smile_cascade_path = r'C:\Users\saad2\Desktop\Project_Omotec\MyProject\opencv_3.4_data_haarcascades\haarcascade_smile.xml'
+        face_cascade_path = r'C:\Users\saad2\Documents\GitHub\hotel-repo\Hotel_Project_Full\Main\opencv_3.4_data_haarcascades\haarcascade_frontalface_default.xml'
+        eye_cascade_path = r'C:\Users\saad2\Documents\GitHub\hotel-repo\Hotel_Project_Full\Main\opencv_3.4_data_haarcascades\haarcascade_eye.xml'
+        smile_cascade_path = r'C:\Users\saad2\Documents\GitHub\hotel-repo\Hotel_Project_Full\Main\opencv_3.4_data_haarcascades\haarcascade_smile.xml'
 
         # Check if all the files exist before loading them
         if not os.path.isfile(face_cascade_path):

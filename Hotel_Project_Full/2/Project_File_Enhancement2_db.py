@@ -56,6 +56,7 @@ def create_submit_button(visit_purpose,room_preference):
         st.success("Guest information has been successfully saved to the database.")
 
 if __name__ == "__main__":
+    st.title("Function 2")
     # Run the functions to collect guest information
     visit_purpose, room_preference = collect_visit_purpose()  
     

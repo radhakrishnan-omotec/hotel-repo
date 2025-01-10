@@ -59,9 +59,10 @@ def create_submit_button(dietary_preferences, arrival_time, departure_time, pref
         st.success("Additional guest information has been successfully saved to the database.")
 
 if __name__ == "__main__":
+    st.title("Function 1")
     # Collect additional guest information
     dietary, arrival, departure, language = collect_additional_info()
-    
+
     # Create submit button
     create_submit_button(dietary, arrival, departure, language)
     

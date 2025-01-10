@@ -104,6 +104,7 @@ def display_confirmation():
     else:
         st.info("Please fill out the form and press 'Save and Confirm'.")
 if __name__ == "__main__":
+    st.title("Function 5")
     # Set up the database
     setup_database()
 
